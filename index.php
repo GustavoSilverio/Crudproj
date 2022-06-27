@@ -12,7 +12,7 @@
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type= "text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -82,25 +82,8 @@
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <h4 class="text-uppercase mb-4">About Freelancer</h4>
                         <p class="lead mb-0">
                             Freelance is a free to use, MIT licensed Bootstrap theme created by
@@ -113,9 +96,8 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+            <div class="container"><small>Copyright &copy; Gustavo Silvério 2022 All rights reserved</small></div>
         </div>
-        <!-- Portfolio Modals-->
         <!-- Portfolio Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -124,17 +106,58 @@
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                <section class="page-section" id="contact">
+                                  <div class="container">
+                                        <!-- Contact Section Heading-->
+                                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2>
+                                        <!-- Contact Section Form-->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-8 col-xl-7">
+                                                <!-- * * * * * * * * * * * * * * *-->
+                                                <!-- * * SB Forms Contact Form * *-->
+                                                <!-- * * * * * * * * * * * * * * *-->
+                                                <!-- This form is pre-integrated with SB Forms.-->
+                                                <!-- To make this form functional, sign up at-->
+                                                <!-- https://startbootstrap.com/solution/contact-forms-->
+                                                <!-- to get an API token!-->
+                                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                                    <!-- Email address input-->
+                                                    <div class="form-floating mb-3">
+                                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" data-sb-can-submit="no">
+                                                        <label for="email">Email</label>
+                                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                                    </div>
+                                                    <!-- Phone number input-->
+                                                    <div class="form-floating mb-3">
+                                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" data-sb-can-submit="no">
+                                                        <label for="phone">Senha</label>
+                                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                                    </div>
+                                                    <!-- Submit success message-->
+                                                    <!---->
+                                                    <!-- This is what your users will see when the form-->
+                                                    <!-- has successfully submitted-->
+                                                    <div class="d-none" id="submitSuccessMessage">
+                                                        <div class="text-center mb-3">
+                                                            <div class="fw-bolder">Form submission successful!</div>
+                                                            To activate this form, sign up at
+                                                            <br>
+                                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Submit error message-->
+                                                    <!---->
+                                                    <!-- This is what your users will see when there is-->
+                                                    <!-- an error submitting the form-->
+                                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                                    <!-- Submit Button-->
+                                                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">ENVIAR</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                                 </div>
                             </div>
                         </div>
