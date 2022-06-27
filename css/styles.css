@@ -4594,7 +4594,7 @@ fieldset:disabled .btn {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -4609,7 +4609,7 @@ fieldset:disabled .btn {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .navbar-brand {
